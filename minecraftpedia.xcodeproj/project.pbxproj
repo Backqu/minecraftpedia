@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		DA1AC1C71AA4AFED0019A298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC1C61AA4AFED0019A298 /* AppDelegate.swift */; };
-		DA1AC1C91AA4AFED0019A298 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC1C81AA4AFED0019A298 /* MasterViewController.swift */; };
-		DA1AC1CB1AA4AFED0019A298 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC1CA1AA4AFED0019A298 /* DetailViewController.swift */; };
 		DA1AC1CE1AA4AFED0019A298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1AC1CC1AA4AFED0019A298 /* Main.storyboard */; };
 		DA1AC1D01AA4AFED0019A298 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1AC1CF1AA4AFED0019A298 /* Images.xcassets */; };
 		DA1AC1D31AA4AFED0019A298 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA1AC1D11AA4AFED0019A298 /* LaunchScreen.xib */; };
 		DA1AC1DF1AA4AFED0019A298 /* minecraftpediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC1DE1AA4AFED0019A298 /* minecraftpediaTests.swift */; };
+		DA59C9531AA4BEE6007A316C /* ItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA59C9521AA4BEE6007A316C /* ItensViewController.swift */; };
+		DAD2B5901AA4C12A00F03ADF /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B58F1AA4C12A00F03ADF /* RecipesViewController.swift */; };
+		DAD2B5921AA4C26500F03ADF /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B5911AA4C26500F03ADF /* RecipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +31,15 @@
 		DA1AC1C11AA4AFEC0019A298 /* minecraftpedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minecraftpedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1AC1C51AA4AFED0019A298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA1AC1C61AA4AFED0019A298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA1AC1C81AA4AFED0019A298 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		DA1AC1CA1AA4AFED0019A298 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DA1AC1CD1AA4AFED0019A298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA1AC1CF1AA4AFED0019A298 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA1AC1D21AA4AFED0019A298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DA1AC1D81AA4AFED0019A298 /* minecraftpediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = minecraftpediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1AC1DD1AA4AFED0019A298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA1AC1DE1AA4AFED0019A298 /* minecraftpediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minecraftpediaTests.swift; sourceTree = "<group>"; };
+		DA59C9521AA4BEE6007A316C /* ItensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItensViewController.swift; sourceTree = "<group>"; };
+		DAD2B58F1AA4C12A00F03ADF /* RecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		DAD2B5911AA4C26500F03ADF /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				DA1AC1C61AA4AFED0019A298 /* AppDelegate.swift */,
-				DA1AC1C81AA4AFED0019A298 /* MasterViewController.swift */,
-				DA1AC1CA1AA4AFED0019A298 /* DetailViewController.swift */,
+				DA59C9521AA4BEE6007A316C /* ItensViewController.swift */,
+				DAD2B58F1AA4C12A00F03ADF /* RecipesViewController.swift */,
+				DAD2B5911AA4C26500F03ADF /* RecipeViewController.swift */,
 				DA1AC1CC1AA4AFED0019A298 /* Main.storyboard */,
 				DA1AC1CF1AA4AFED0019A298 /* Images.xcassets */,
 				DA1AC1D11AA4AFED0019A298 /* LaunchScreen.xib */,
@@ -215,8 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA1AC1CB1AA4AFED0019A298 /* DetailViewController.swift in Sources */,
-				DA1AC1C91AA4AFED0019A298 /* MasterViewController.swift in Sources */,
+				DAD2B5921AA4C26500F03ADF /* RecipeViewController.swift in Sources */,
+				DA59C9531AA4BEE6007A316C /* ItensViewController.swift in Sources */,
+				DAD2B5901AA4C12A00F03ADF /* RecipesViewController.swift in Sources */,
 				DA1AC1C71AA4AFED0019A298 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				DA1AC1E41AA4AFED0019A298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA1AC1E51AA4AFED0019A298 /* Build configuration list for PBXNativeTarget "minecraftpediaTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				DA1AC1E71AA4AFED0019A298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
