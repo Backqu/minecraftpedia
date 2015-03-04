@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		75F159F11AA73B2400F45AF5 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F159F01AA73B2400F45AF5 /* SwiftyJSON.swift */; };
 		75F159F31AA73B8E00F45AF5 /* minecraft.json in Resources */ = {isa = PBXBuildFile; fileRef = 75F159F21AA73B8E00F45AF5 /* minecraft.json */; };
+		CA8CCF0290849FE9885A4CBE /* libPods-minecraftpedia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C59D9E48FE1F7DD60CA19 /* libPods-minecraftpedia.a */; };
 		DA1AC1C71AA4AFED0019A298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC1C61AA4AFED0019A298 /* AppDelegate.swift */; };
 		DA1AC1CE1AA4AFED0019A298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1AC1CC1AA4AFED0019A298 /* Main.storyboard */; };
 		DA1AC1D01AA4AFED0019A298 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1AC1CF1AA4AFED0019A298 /* Images.xcassets */; };
@@ -30,8 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05565CEEB2CD6190923E5CBC /* Pods-minecraftpedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minecraftpedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-minecraftpedia/Pods-minecraftpedia.debug.xcconfig"; sourceTree = "<group>"; };
+		67B7F10C0E7DC6127F5FCD55 /* Pods-minecraftpedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minecraftpedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-minecraftpedia/Pods-minecraftpedia.release.xcconfig"; sourceTree = "<group>"; };
 		75F159F01AA73B2400F45AF5 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		75F159F21AA73B8E00F45AF5 /* minecraft.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = minecraft.json; sourceTree = "<group>"; };
+		B52C59D9E48FE1F7DD60CA19 /* libPods-minecraftpedia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-minecraftpedia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1AC1C11AA4AFEC0019A298 /* minecraftpedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minecraftpedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1AC1C51AA4AFED0019A298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA1AC1C61AA4AFED0019A298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +48,7 @@
 		DA59C9521AA4BEE6007A316C /* ItensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItensViewController.swift; sourceTree = "<group>"; };
 		DAD2B58F1AA4C12A00F03ADF /* RecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		DAD2B5911AA4C26500F03ADF /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		DAF157D51AA7516B0050ADE7 /* minecraftpedia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "minecraftpedia-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8CCF0290849FE9885A4CBE /* libPods-minecraftpedia.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AEE99E6E02F3D9F43A72556 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B52C59D9E48FE1F7DD60CA19 /* libPods-minecraftpedia.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		75F159EF1AA73B1400F45AF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,12 +86,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		77684CF64AAC1319F32C4F04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05565CEEB2CD6190923E5CBC /* Pods-minecraftpedia.debug.xcconfig */,
+				67B7F10C0E7DC6127F5FCD55 /* Pods-minecraftpedia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA1AC1B81AA4AFEC0019A298 = {
 			isa = PBXGroup;
 			children = (
 				DA1AC1C31AA4AFEC0019A298 /* minecraftpedia */,
 				DA1AC1DB1AA4AFED0019A298 /* minecraftpediaTests */,
 				DA1AC1C21AA4AFEC0019A298 /* Products */,
+				77684CF64AAC1319F32C4F04 /* Pods */,
+				0AEE99E6E02F3D9F43A72556 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				75F159F21AA73B8E00F45AF5 /* minecraft.json */,
+				DAF157D51AA7516B0050ADE7 /* minecraftpedia-Bridging-Header.h */,
 				DA1AC1C51AA4AFED0019A298 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -139,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA1AC1E21AA4AFED0019A298 /* Build configuration list for PBXNativeTarget "minecraftpedia" */;
 			buildPhases = (
+				7AEEFCB9BFFC523F7A7A7BBA /* Check Pods Manifest.lock */,
 				DA1AC1BD1AA4AFEC0019A298 /* Sources */,
 				DA1AC1BE1AA4AFEC0019A298 /* Frameworks */,
 				DA1AC1BF1AA4AFEC0019A298 /* Resources */,
+				A0D0DE7B1EBE1AF485B52924 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +255,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AEEFCB9BFFC523F7A7A7BBA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0D0DE7B1EBE1AF485B52924 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-minecraftpedia/Pods-minecraftpedia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA1AC1BD1AA4AFEC0019A298 /* Sources */ = {
@@ -358,21 +419,28 @@
 		};
 		DA1AC1E31AA4AFED0019A298 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05565CEEB2CD6190923E5CBC /* Pods-minecraftpedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = minecraftpedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "minecraftpedia/minecraftpedia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		DA1AC1E41AA4AFED0019A298 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67B7F10C0E7DC6127F5FCD55 /* Pods-minecraftpedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = minecraftpedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "minecraftpedia/minecraftpedia-Bridging-Header.h";
 			};
 			name = Release;
 		};
