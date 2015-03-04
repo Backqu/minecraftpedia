@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75F159F11AA73B2400F45AF5 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F159F01AA73B2400F45AF5 /* SwiftyJSON.swift */; };
+		75F159F31AA73B8E00F45AF5 /* minecraft.json in Resources */ = {isa = PBXBuildFile; fileRef = 75F159F21AA73B8E00F45AF5 /* minecraft.json */; };
 		DA1AC1C71AA4AFED0019A298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC1C61AA4AFED0019A298 /* AppDelegate.swift */; };
 		DA1AC1CE1AA4AFED0019A298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1AC1CC1AA4AFED0019A298 /* Main.storyboard */; };
 		DA1AC1D01AA4AFED0019A298 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1AC1CF1AA4AFED0019A298 /* Images.xcassets */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75F159F01AA73B2400F45AF5 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		75F159F21AA73B8E00F45AF5 /* minecraft.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = minecraft.json; sourceTree = "<group>"; };
 		DA1AC1C11AA4AFEC0019A298 /* minecraftpedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minecraftpedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1AC1C51AA4AFED0019A298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA1AC1C61AA4AFED0019A298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75F159EF1AA73B1400F45AF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75F159F01AA73B2400F45AF5 /* SwiftyJSON.swift */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA1AC1B81AA4AFEC0019A298 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +93,7 @@
 		DA1AC1C31AA4AFEC0019A298 /* minecraftpedia */ = {
 			isa = PBXGroup;
 			children = (
+				75F159EF1AA73B1400F45AF5 /* Frameworks */,
 				DA1AC1C61AA4AFED0019A298 /* AppDelegate.swift */,
 				DA59C9521AA4BEE6007A316C /* ItensViewController.swift */,
 				DAD2B58F1AA4C12A00F03ADF /* RecipesViewController.swift */,
@@ -96,6 +109,7 @@
 		DA1AC1C41AA4AFEC0019A298 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				75F159F21AA73B8E00F45AF5 /* minecraft.json */,
 				DA1AC1C51AA4AFED0019A298 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -201,6 +215,7 @@
 				DA1AC1CE1AA4AFED0019A298 /* Main.storyboard in Resources */,
 				DA1AC1D31AA4AFED0019A298 /* LaunchScreen.xib in Resources */,
 				DA1AC1D01AA4AFED0019A298 /* Images.xcassets in Resources */,
+				75F159F31AA73B8E00F45AF5 /* minecraft.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +236,7 @@
 				DAD2B5921AA4C26500F03ADF /* RecipeViewController.swift in Sources */,
 				DA59C9531AA4BEE6007A316C /* ItensViewController.swift in Sources */,
 				DAD2B5901AA4C12A00F03ADF /* RecipesViewController.swift in Sources */,
+				75F159F11AA73B2400F45AF5 /* SwiftyJSON.swift in Sources */,
 				DA1AC1C71AA4AFED0019A298 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

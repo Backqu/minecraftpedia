@@ -11,8 +11,22 @@ import UIKit
 class ItemsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        println("Hello")
+		
+		
+		//load json
+		
+		let path = NSBundle.mainBundle().pathForResource("minecraft", ofType: "json")
+		let data = NSData(contentsOfFile: path!)
+		let json = JSON(data: data!)
+		if let itemID = json["minecraft"]["daylight_detector"]["itemID"].int {
+			println("\(itemID)")
+		}
+		
+		for (key: String, subJson: JSON) in json["minecraft"] {
+			println(subJson["name"])
+		}
+		
+		
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
