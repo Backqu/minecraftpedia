@@ -9,15 +9,29 @@
 import UIKit
 
 class ItemsViewController: UITableViewController {
-    var items: [JSON]!
+    var items: [String: JSON]!
+    var recipes: JSON!
+    var recipeNames: [String]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-		let path = NSBundle.mainBundle().pathForResource("minecraft", ofType: "json")
-		let data = NSData(contentsOfFile: path!)
-        self.items = JSON(data: data!)["minecraft"].dictionaryValue.values.array.sorted { (a, b) in
-            return a["name"] < b["name"]
+  
+//part for items
+    
+		let itemspath = NSBundle.mainBundle().pathForResource("items", ofType: "json")
+		let itemsdata = NSData(contentsOfFile: itemspath!)
+        let itemsArray = JSON(data: itemsdata!)["minecraft"].dictionaryValue.values.array
+        self.items = [:]
+        
+        for item in itemsArray {
+            self.items[item["name"].stringValue] = item
+        }
+        
+        let recipespath = NSBundle.mainBundle().pathForResource("recipes", ofType: "json")
+        let recipesdata = NSData(contentsOfFile: recipespath!)
+        self.recipes = JSON(data: recipesdata!)
+        self.recipeNames = self.recipes.dictionaryValue.keys.array.sorted { (a, b) in
+            return a < b
         }
     }
     
@@ -38,17 +52,22 @@ class ItemsViewController: UITableViewController {
 //        }
 //    }
     
-    override func  tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.recipeNames.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
-        let item = self.items[indexPath.row]
-        cell.textLabel!.text = item["name"].stringValue
-        let image = item["image"].stringValue
-        cell.imageView!.setImageWithURL(NSURL(string: "http://assets.wurstmineberg.de/img/grid/\(image)"))
+        let name = self.recipeNames[indexPath.row]
+        cell.textLabel!.text = name
+        
+        cell.imageView!.image = nil;
+        if let item = self.items[name] {
+            let image = item["image"].stringValue
+            cell.imageView!.setImageWithURL(NSURL(string: "http://assets.wurstmineberg.de/img/grid/\(image)"))
+        }
+
         return cell
     }
 }							

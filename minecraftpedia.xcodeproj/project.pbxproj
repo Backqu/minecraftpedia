@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		75F159F11AA73B2400F45AF5 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F159F01AA73B2400F45AF5 /* SwiftyJSON.swift */; };
-		75F159F31AA73B8E00F45AF5 /* minecraft.json in Resources */ = {isa = PBXBuildFile; fileRef = 75F159F21AA73B8E00F45AF5 /* minecraft.json */; };
 		CA8CCF0290849FE9885A4CBE /* libPods-minecraftpedia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C59D9E48FE1F7DD60CA19 /* libPods-minecraftpedia.a */; };
 		DA1AC1C71AA4AFED0019A298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC1C61AA4AFED0019A298 /* AppDelegate.swift */; };
 		DA1AC1CE1AA4AFED0019A298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1AC1CC1AA4AFED0019A298 /* Main.storyboard */; };
@@ -18,6 +17,8 @@
 		DA59C9531AA4BEE6007A316C /* ItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA59C9521AA4BEE6007A316C /* ItensViewController.swift */; };
 		DAD2B5901AA4C12A00F03ADF /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B58F1AA4C12A00F03ADF /* RecipesViewController.swift */; };
 		DAD2B5921AA4C26500F03ADF /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B5911AA4C26500F03ADF /* RecipeViewController.swift */; };
+		DAF157DB1AA75DEA0050ADE7 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = DAF157D91AA75DEA0050ADE7 /* recipes.json */; };
+		DAF157DC1AA75DEA0050ADE7 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = DAF157DA1AA75DEA0050ADE7 /* items.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,6 @@
 		05565CEEB2CD6190923E5CBC /* Pods-minecraftpedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minecraftpedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-minecraftpedia/Pods-minecraftpedia.debug.xcconfig"; sourceTree = "<group>"; };
 		67B7F10C0E7DC6127F5FCD55 /* Pods-minecraftpedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minecraftpedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-minecraftpedia/Pods-minecraftpedia.release.xcconfig"; sourceTree = "<group>"; };
 		75F159F01AA73B2400F45AF5 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		75F159F21AA73B8E00F45AF5 /* minecraft.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = minecraft.json; sourceTree = "<group>"; };
 		B52C59D9E48FE1F7DD60CA19 /* libPods-minecraftpedia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-minecraftpedia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1AC1C11AA4AFEC0019A298 /* minecraftpedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minecraftpedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1AC1C51AA4AFED0019A298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		DAD2B58F1AA4C12A00F03ADF /* RecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		DAD2B5911AA4C26500F03ADF /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		DAF157D51AA7516B0050ADE7 /* minecraftpedia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "minecraftpedia-Bridging-Header.h"; sourceTree = "<group>"; };
+		DAF157D91AA75DEA0050ADE7 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		DAF157DA1AA75DEA0050ADE7 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +136,8 @@
 		DA1AC1C41AA4AFEC0019A298 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				75F159F21AA73B8E00F45AF5 /* minecraft.json */,
+				DAF157D91AA75DEA0050ADE7 /* recipes.json */,
+				DAF157DA1AA75DEA0050ADE7 /* items.json */,
 				DAF157D51AA7516B0050ADE7 /* minecraftpedia-Bridging-Header.h */,
 				DA1AC1C51AA4AFED0019A298 /* Info.plist */,
 			);
@@ -240,10 +243,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF157DC1AA75DEA0050ADE7 /* items.json in Resources */,
+				DAF157DB1AA75DEA0050ADE7 /* recipes.json in Resources */,
 				DA1AC1CE1AA4AFED0019A298 /* Main.storyboard in Resources */,
 				DA1AC1D31AA4AFED0019A298 /* LaunchScreen.xib in Resources */,
 				DA1AC1D01AA4AFED0019A298 /* Images.xcassets in Resources */,
-				75F159F31AA73B8E00F45AF5 /* minecraft.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
