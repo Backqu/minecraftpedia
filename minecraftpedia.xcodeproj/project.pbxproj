@@ -14,7 +14,9 @@
 		DA1AC1D01AA4AFED0019A298 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1AC1CF1AA4AFED0019A298 /* Images.xcassets */; };
 		DA1AC1D31AA4AFED0019A298 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA1AC1D11AA4AFED0019A298 /* LaunchScreen.xib */; };
 		DA1AC1DF1AA4AFED0019A298 /* minecraftpediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC1DE1AA4AFED0019A298 /* minecraftpediaTests.swift */; };
-		DA59C9531AA4BEE6007A316C /* ItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA59C9521AA4BEE6007A316C /* ItensViewController.swift */; };
+		DA4760131AA895D100FC0B37 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4760121AA895D100FC0B37 /* Item.swift */; };
+		DA4760151AA896AF00FC0B37 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4760141AA896AF00FC0B37 /* Recipe.swift */; };
+		DA59C9531AA4BEE6007A316C /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA59C9521AA4BEE6007A316C /* ItemsViewController.swift */; };
 		DAD2B5901AA4C12A00F03ADF /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B58F1AA4C12A00F03ADF /* RecipesViewController.swift */; };
 		DAD2B5921AA4C26500F03ADF /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2B5911AA4C26500F03ADF /* RecipeViewController.swift */; };
 		DAF157DB1AA75DEA0050ADE7 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = DAF157D91AA75DEA0050ADE7 /* recipes.json */; };
@@ -45,7 +47,9 @@
 		DA1AC1D81AA4AFED0019A298 /* minecraftpediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = minecraftpediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1AC1DD1AA4AFED0019A298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA1AC1DE1AA4AFED0019A298 /* minecraftpediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minecraftpediaTests.swift; sourceTree = "<group>"; };
-		DA59C9521AA4BEE6007A316C /* ItensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItensViewController.swift; sourceTree = "<group>"; };
+		DA4760121AA895D100FC0B37 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		DA4760141AA896AF00FC0B37 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		DA59C9521AA4BEE6007A316C /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		DAD2B58F1AA4C12A00F03ADF /* RecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		DAD2B5911AA4C26500F03ADF /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		DAF157D51AA7516B0050ADE7 /* minecraftpedia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "minecraftpedia-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -122,9 +126,11 @@
 			children = (
 				75F159EF1AA73B1400F45AF5 /* Frameworks */,
 				DA1AC1C61AA4AFED0019A298 /* AppDelegate.swift */,
-				DA59C9521AA4BEE6007A316C /* ItensViewController.swift */,
+				DA59C9521AA4BEE6007A316C /* ItemsViewController.swift */,
 				DAD2B58F1AA4C12A00F03ADF /* RecipesViewController.swift */,
 				DAD2B5911AA4C26500F03ADF /* RecipeViewController.swift */,
+				DA4760121AA895D100FC0B37 /* Item.swift */,
+				DA4760141AA896AF00FC0B37 /* Recipe.swift */,
 				DA1AC1CC1AA4AFED0019A298 /* Main.storyboard */,
 				DA1AC1CF1AA4AFED0019A298 /* Images.xcassets */,
 				DA1AC1D11AA4AFED0019A298 /* LaunchScreen.xib */,
@@ -299,9 +305,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAD2B5921AA4C26500F03ADF /* RecipeViewController.swift in Sources */,
-				DA59C9531AA4BEE6007A316C /* ItensViewController.swift in Sources */,
+				DA59C9531AA4BEE6007A316C /* ItemsViewController.swift in Sources */,
+				DA4760151AA896AF00FC0B37 /* Recipe.swift in Sources */,
 				DAD2B5901AA4C12A00F03ADF /* RecipesViewController.swift in Sources */,
 				75F159F11AA73B2400F45AF5 /* SwiftyJSON.swift in Sources */,
+				DA4760131AA895D100FC0B37 /* Item.swift in Sources */,
 				DA1AC1C71AA4AFED0019A298 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
