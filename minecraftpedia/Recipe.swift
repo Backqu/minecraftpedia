@@ -13,7 +13,6 @@ struct Recipe {
     let count: Int
     
     init(json: JSON) {
-        println("json: \(json)")
         self.ingredients = map(json["recipe"].arrayValue) { $0.string }
         self.count = json["output"].intValue
     }

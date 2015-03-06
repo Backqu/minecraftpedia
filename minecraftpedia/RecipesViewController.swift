@@ -18,9 +18,10 @@ class RecipesViewController: UITableViewController  {
         let recipe = item.recipes.first!
         let placeholder = UIImage(named: "placeholder")
         for (index, ingredientName) in enumerate(recipe.ingredients) {
-            if let ingredientName = ingredientName,
-                let ingredient = Item.allItems[ingredientName] {
-                self.ingredientButtons[index].setImageForState(.Normal, withURL: ingredient.imageURL, placeholderImage: placeholder)
+			if let ingredientName = ingredientName {
+                if let ingredient = Item.allItems[ingredientName] {
+					self.ingredientButtons[index].setImageForState(.Normal, withURL: ingredient.imageURL, placeholderImage: placeholder)
+				}
             }
         }
     }
@@ -42,7 +43,7 @@ class RecipesViewController: UITableViewController  {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier( "Cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier( "Cell", forIndexPath: indexPath) as UITableViewCell
         cell.textLabel!.text = "item"
         return cell
     }

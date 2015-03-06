@@ -40,7 +40,7 @@ class ItemsViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
         let item = self.sortedItems[indexPath.row]
         cell.textLabel!.text = item.name
@@ -59,10 +59,11 @@ class ItemsViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
         
-        if let recipesViewController = segue.destinationViewController as? RecipesViewController,
-            let cell = sender as? UITableViewCell {
-            let indexPath = self.tableView.indexPathForCell(cell)!
-            recipesViewController.item = self.sortedItems[indexPath.row]
+		if let recipesViewController = segue.destinationViewController as? RecipesViewController {
+            if let cell = sender as? UITableViewCell {
+				let indexPath = self.tableView.indexPathForCell(cell)!
+				recipesViewController.item = self.sortedItems[indexPath.row]
+			}
         }
     }
 }

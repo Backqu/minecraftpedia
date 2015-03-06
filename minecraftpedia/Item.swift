@@ -8,9 +8,19 @@
 
 import Foundation
 
+extension Dictionary {
+	func map<OutKey: Hashable, OutValue>(transform: Element -> (OutKey, OutValue)) -> [OutKey: OutValue] {
+		var outDictionary: [OutKey: OutValue] = [:]
+		for tuple in self {
+			let (newKey, newValue) = transform(tuple)
+			outDictionary[newKey] = newValue
+		}
+		return outDictionary
+	}
+}
+
 struct Item {
     let name: String
-    let itemID: Int?
     let imageURL: NSURL?
     let recipes: [Recipe]
     
@@ -18,11 +28,9 @@ struct Item {
         self.name = name
         
         if let itemJSON = Item.itemsJSON[name]?.dictionary {
-            self.itemID = itemJSON["itemID"]!.intValue
             let image = itemJSON["image"]!.stringValue
             self.imageURL = NSURL(string: "http://assets.wurstmineberg.de/img/grid/\(image)")
         } else {
-            self.itemID = nil
             self.imageURL = nil
         }
         
@@ -35,15 +43,10 @@ struct Item {
     private static var _allItems: [String: Item]!
     static var allItems: [String: Item] {
         dispatch_once(&_allItemsOnceToken) {
-            let array = map(self.recipesJSON.dictionaryValue) { (name, json) in
-                return Item(name: name, json: json)
-            }
-            
-            self._allItems = [:]
-            
-            for item in array {
-                self._allItems[item.name] = item
-            }
+			self._allItems = self.recipesJSON.dictionaryValue.map({ (name, json) in
+				(name, Item(name: name, json: json))
+			})
+			return
         }
         
         return _allItems
