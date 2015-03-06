@@ -45,7 +45,10 @@ class ItemsViewController: UITableViewController {
         let item = self.sortedItems[indexPath.row]
         cell.textLabel!.text = item.name
         
-        cell.imageView!.image = nil;
+        let placeholder = UIImage(named: "placeholder")
+        cell.imageView!.image = placeholder
+        cell.imageView!.contentMode = .ScaleAspectFill
+        
         if let imageURL = item.imageURL {
             cell.imageView!.setImageWithURL(imageURL)
         }
